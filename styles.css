@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Particles.js Container */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+    z-index: -1;
+  }
+  
+  /* Header Styles */
+  header {
+    text-align: center;
+    margin-top: 20vh;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00ff88, #00a1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88;
+    }
+    100% {
+      text-shadow: 0 0 10px #00a1ff, 0 0 20px #00a1ff, 0 0 40px #00a1ff;
+    }
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    background: linear-gradient(45deg, #00ff88, #00a1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #ccc;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  /* Social Links */
+  .social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-btn {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  .social-btn:hover {
+    color: #00ff88;
+    transform: translateY(-10px);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Typewriter Effect */
+  #typewriter {
+    font-size: 1.5rem;
+    color: #ccc;
+    overflow: hidden;
+    border-right: 0.15em solid #00ff88;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00ff88;
+    }
+  }
