@@ -98,3 +98,34 @@ function typeWriter() {
 document.addEventListener("DOMContentLoaded", () => {
   typeWriter();
 });
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.getElementById("nav-links");
+
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+// Hide Loading Animation
+window.addEventListener("load", () => {
+  const loading = document.getElementById("loading");
+  loading.style.display = "none";
+});
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 100 },
+    color: { value: "#00ff88" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5, random: true },
+    size: { value: 3, random: true },
+    line_linked: { enable: true, distance: 150, color: "#00a1ff", opacity: 0.4, width: 1 },
+    move: { enable: true, speed: 3, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true
+    }
+  }
+});
