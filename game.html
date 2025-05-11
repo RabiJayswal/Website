@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes - Rabi Jayswal</title>
+  <title>Game - Rabi Jayswal</title>
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -26,46 +26,28 @@
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="notes.html" class="nav-link">Notes</a></li>
         <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="game.html" class="nav-link">Game</a></li> <!-- Added Game Link -->
         <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="close-menu" id="close-menu">
+          <i class="fas fa-times"></i> <!-- Close button -->
+        </li>
       </ul>
     </div>
   </nav>
 
-  <!-- Notes Section -->
-  <section class="notes-section">
-    <h1>Notes</h1>
-    <p>Here are some of notes and resources. Click on a title to preview the PDF.</p>
-    <div class="notes-list">
-      <!-- Note 1 -->
-      <div class="note-card">
-        <h2>
-          <a href="class_12_phy.html" class="note-title">
-            Class 12 Physics
-          </a>
-        </h2>
-      </div>
-
-      <!-- Note 2 -->
-      <div class="note-card">
-        <h2>
-          <a href="class_12_che.html" class="note-title">
-            Class 12 Chemistry
-          </a>
-        </h2>
-      </div>
-
-      <!-- Note 3 -->
-      <div class="note-card">
-        <h2>
-          <a href="3.pdf" target="_blank" class="note-title">
-            More to come...
-          </a>
-        </h2>
-      </div>
+  <!-- Game Section -->
+  <section class="game-section">
+    <h1>Dodge the Obstacles!</h1>
+    <p>Use the <strong>Spacebar</strong> to jump and avoid the obstacles.</p>
+    <div class="game-container">
+      <div id="player"></div>
+      <div id="obstacle"></div>
     </div>
+    <p id="score">Score: 0</p>
+    <button id="restart-button">Restart</button>
   </section>
 
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
